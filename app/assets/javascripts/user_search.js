@@ -55,7 +55,7 @@ $(function(){
   $(function(){
     $("#user-search-result").on("click", ".chat-group-user__btn--add", function(){
       var name = $(this).attr("data-user-name");
-      var id = $(this).attr("user-id");
+      var id = $(this).attr("data-user-id");
       addUser(name,id);
       $(this).parent().remove();
     })
